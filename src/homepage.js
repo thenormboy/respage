@@ -1,4 +1,4 @@
-export default function createHeader() {
+function createHeader() {
     const element = document.createElement('div')
     element.classList.add('header')
 
@@ -17,4 +17,20 @@ export default function createHeader() {
     return element
 }
 
+function createFooter() {
+    const element = document.createElement('div')
+    element.classList.add('footer')
 
+    const footerText = document.createElement('p')
+
+    footerText.textContent = 'Footer'
+
+    element.appendChild(footerText)
+
+    return element
+}
+
+export {
+    createHeader,
+    createFooter
+}
