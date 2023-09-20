@@ -4,10 +4,10 @@ html {
     background-size: cover;
 }
 
-body {
-    height: 100vh;
-    display: grid;
-    grid-auto-flow: row;
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -28,7 +28,13 @@ body {
     cursor: pointer;
 }
 
+.main {
+    font-size: 60px;
+    align-self: center;
+}
+
 .footer {
+    margin-top: auto;
     align-self: center;
 }
 

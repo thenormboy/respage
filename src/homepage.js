@@ -30,7 +30,21 @@ function createFooter() {
     return element
 }
 
+function createMain() {
+    const element = document.createElement('div')
+    element.classList.add('main')
+
+    const mainContent = document.createElement('p')
+
+    mainContent.textContent = 'Elevenses'
+
+    element.appendChild(mainContent)
+
+    return element
+}
+
 export {
     createHeader,
+    createMain,
     createFooter
 }
