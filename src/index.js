@@ -1,4 +1,5 @@
 import {createHeader, createMain, createFooter} from './homepage.js';
+import {createMenuItem} from './menu.js';
 import './style.css';
 import Icon from './background.jpg'
 
