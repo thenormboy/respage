@@ -1,6 +1,6 @@
 function createMenuItem(foodName, description, price) {
     const element = document.createElement('div')
-    element.classList.add(menuItem)
+    element.classList.add('menuItem')
 
     const name = document.createElement('p')
     name.classList.add('food_name')

@@ -6,6 +6,15 @@ function createHeader() {
     const menuButton = document.createElement('button')
     const contactButton = document.createElement('button')
 
+    homeButton.classList.add('home_button')
+    menuButton.classList.add('menu_button')
+    contactButton.classList.add('contact_button')
+
+    homeButton.setAttribute('id', 'home_button')
+    menuButton.setAttribute('id', 'menu_button')
+    contactButton.setAttribute('id', 'contact_button')
+
+
     homeButton.textContent = 'HOME'
     menuButton.textContent = 'MENU'
     contactButton.textContent = 'CONTACT'

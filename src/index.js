@@ -3,7 +3,14 @@ import {createMenuItem} from './menu.js';
 import './style.css';
 import Icon from './background.jpg'
 
-function loadPage() {
+
+function clearPage() {
+    const element = document.querySelector('#content')
+
+    element.textContent = ''
+}
+
+function loadHomePage() {
     const element = document.querySelector('#content')
 
     element.appendChild(createHeader())
@@ -11,5 +18,28 @@ function loadPage() {
     element.appendChild(createFooter())
 }
 
-loadPage();
+function loadMenuPage() {
+    const element = document.querySelector('#content')
+
+    element.appendChild(createHeader())
+    element.appendChild(createMenuItem('Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', '$2.50'))
+    element.appendChild(createFooter())
+}
+
+
+loadHomePage();
+
+const home_button = document.querySelector('#home_button')
+
+home_button.addEventListener('click', () => {
+    clearPage();
+    loadHomePage();
+})
+
+const menu_button = document.querySelector('#menu_button')
+
+menu_button.addEventListener('click', () => {
+    clearPage();
+    loadMenuPage();
+})
 
