@@ -1,6 +1,7 @@
 html {
     height: 100vh;
-    background: url('./background.jpg');
+    background-image: linear-gradient(rgb(165,165,165), rgb(175,175,175)), url('./background.jpg');
+    background-blend-mode:darken;
     background-size: cover;
 }
 
@@ -29,7 +30,8 @@ html {
 }
 
 .main {
-    font-size: 60px;
+    font-size: 128px;
+    color: antiquewhite;
     align-self: center;
 }
 

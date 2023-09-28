@@ -28,7 +28,6 @@ function loadMenuPage() {
     element.appendChild(createMenuItem('Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', '$2.50'))
     element.appendChild(createMenuItem('Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', '$2.50'))
     element.appendChild(createMenuItem('Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', '$2.50'))
-
     element.appendChild(createFooter())
 }
 
